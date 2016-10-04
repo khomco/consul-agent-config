@@ -1,0 +1,10 @@
+[template]
+src = "server.json.tmpl"
+dest = "/opt/rancher/config/server.json"
+owner = "root"
+mode = "0644"
+keys = [
+  "/services/consul-agent/metadata/consul.server",
+  "/services/consul-agent/metadata/enc.key",
+  "/self/container/primary_ip"
+]

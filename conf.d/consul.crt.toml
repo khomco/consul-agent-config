@@ -1,0 +1,9 @@
+[template]
+src = "consul.crt.tmpl"
+dest = "/opt/rancher/ssl/consul.crt"
+owner = "root"
+mode = "0644"
+keys = [
+  "/services/consul-agent/metadata/consul.crt",
+  "/self/container/service_index",
+  ]
